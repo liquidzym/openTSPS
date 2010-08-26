@@ -83,6 +83,11 @@ class ofxTSPSGuiManager {
 
 	void loadSettings ( string xml );
 	
+	// ZACK BOKA: Added so the quadGui instance can know when image warping is allowed to occur
+	//            (i.e., the image can only get warped when in Camera View).
+	void changeGuiCameraView(bool bCameraView);
+	
+	
   protected:
 	//a little goofy way to keep track of custom params. works but i'm open to suggestions
 	ofxLabGui panel;

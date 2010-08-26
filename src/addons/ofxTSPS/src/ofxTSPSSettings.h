@@ -60,6 +60,7 @@ public:
 	bool bAmplify;
 	bool bSmooth;
 	bool bLearnBackground;
+	bool bAdjustedViewInColor;
 	
 	// tracking vars
 	bool bLearnBackgroundProgressive;
@@ -72,6 +73,7 @@ public:
 	
 	//sensing vars
 	bool bTrackOpticalFlow;
+	float thresholdOpticalFlow;
 	float minOpticalFlow;
 	float maxOpticalFlow;
 	bool bDetectHaar;

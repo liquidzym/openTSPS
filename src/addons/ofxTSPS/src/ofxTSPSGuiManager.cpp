@@ -51,8 +51,8 @@ ofxTSPSGuiManager::ofxTSPSGuiManager() {
 }
 
 void ofxTSPSGuiManager::setup(){
-	//ofxTSPSSettings *p_Settings;
-	//p_Settings = ofxTSPSSettings::getInstance();
+//	ofxTSPSSettings *p_Settings;
+//	p_Settings = ofxTSPSSettings::getInstance();
 	
 	enableGui = true;
 	
@@ -102,7 +102,7 @@ void ofxTSPSGuiManager::setup(){
 	communicationPanel->setDrawLock( false );
 	communicationPanel->setBackgroundColor(180,87,128);
 	communicationPanel->setBackgroundSelectColor(180,87,128);
-	
+
 #ifdef USE_CUSTOM_GUI
 	guiTypePanel * customPanel = panel.addPanel("custom", 1, false);
 	customPanel->setDrawLock( false );
@@ -119,6 +119,15 @@ void ofxTSPSGuiManager::setup(){
 	amplificationGroup->setShowText(false);
 	panel.addToggle("use amplification (video gain)", "USE_AMPLIFICATION", false);
 	panel.addSlider("amplification amount:", "AMPLIFICATION_AMOUNT", 1, 1, 100, true);
+	
+	// ZACK BOKA: choose whether or not to display the Adjusted View in color
+	guiTypeGroup* adjustedViewColorGroup = panel.addGroup("adjustedViewColor");
+	adjustedViewColorGroup->setBackgroundColor(148,129,85);
+	adjustedViewColorGroup->setBackgroundSelectColor(148,129,85);
+	adjustedViewColorGroup->seBaseColor(244,136,136);
+	adjustedViewColorGroup->setShowText(false);
+	panel.addToggle("show Adjusted View in color", "ADJUSTED_VIEW_COLOR", false);
+	
 	
 	//background settings
 	
@@ -196,7 +205,7 @@ void ofxTSPSGuiManager::setup(){
 	optionsGroup->seBaseColor(58,187,147);
 	optionsGroup->setShowText(false);
 	panel.addToggle("track and send contours", "SEND_OSC_CONTOURS", false);
-	
+
 	guiTypeGroup * opticalGroup = panel.addGroup("optical flow");
 	opticalGroup->setBackgroundColor(148,129,85);
 	opticalGroup->setBackgroundSelectColor(148,129,85);
@@ -204,6 +213,13 @@ void ofxTSPSGuiManager::setup(){
 	opticalGroup->setShowText(false);
 	//optical flow
 	panel.addToggle("track and send optical flow in blobs", "SENSE_OPTICAL_FLOW", true);
+	// ZACK BOKA: Added threshold variable for optical flow so users can detect when a certain amount of
+	//            optical flow within a region has passed this set threshold.
+	// NOTE: setting this threshold in the GUI does not change any functionality of TSPS.
+	//       The threshold is a convenience for the user to use in her code (via setting 
+	//       the threshold in the GUI) should she want to detect when a certain amount
+	//       of optical flow within a region has been reached.
+	panel.addTextField("threshold for amount of optical flow in region:", "THRESHOLD_OPTICAL_FLOW","2000", 200, 20);
 	panel.addSlider("filter vectors smaller than:", "MIN_OPTICAL_FLOW", 0, 0, 5.0, false);
 	panel.addSlider("clamp vectors: larger than", "MAX_OPTICAL_FLOW", 10, 5.0, 200, false);
 	
@@ -228,6 +244,7 @@ void ofxTSPSGuiManager::setup(){
 	//JG 1/21/10 disabled this feature to simplify the interface
 	//	panel.addSlider("min. checkable haar size (%)", "MIN_HAAR", .1f, 0.0001f, 1.0f, false);
 	//	panel.addSlider("max. checkable haar size (%)", "MAX_HAAR", .5f, 0.0001f, 1.0f, false);
+	
 	
 	//communication
 	
@@ -371,6 +388,9 @@ void ofxTSPSGuiManager::update(ofEventArgs &e)
 	p_Settings->highpassAmp = panel.getValueI("AMPLIFICATION_AMOUNT");
 	panel.setGroupActive("video", "amplification", p_Settings->bAmplify);
 	
+	p_Settings->bAdjustedViewInColor = panel.getValueB("ADJUSTED_VIEW_COLOR");
+	panel.setGroupActive("video", "adjustedViewColor", p_Settings->bAdjustedViewInColor);
+	
 	p_Settings->bLearnBackground = panel.getValueB("LEARN_BACKGROUND");
 	if(p_Settings->bLearnBackground){ 
 		panel.setValueB("LEARN_BACKGROUND", false);
@@ -385,9 +405,10 @@ void ofxTSPSGuiManager::update(ofEventArgs &e)
 	p_Settings->bLearnBackgroundProgressive = panel.getValueB("RELEARN");
 	p_Settings->fLearnRate = panel.getValueF("RELEARN_BACKGROUND");
 	panel.setGroupActive("background", "background relearn", p_Settings->bLearnBackgroundProgressive);
-	
+
 	p_Settings->bFindHoles = !(panel.getValueB("FIND_HOLES"));
 	p_Settings->bTrackOpticalFlow = panel.getValueB("SENSE_OPTICAL_FLOW");
+	p_Settings->thresholdOpticalFlow = (float) atof(panel.getValueS("THRESHOLD_OPTICAL_FLOW",0,"2000").c_str());
 	panel.setGroupActive("sensing", "optical flow", p_Settings->bTrackOpticalFlow);
 	
 	//JG 12/8/09 GUI-REDUX:
@@ -429,8 +450,8 @@ void ofxTSPSGuiManager::update(ofEventArgs &e)
 	ofPoint * scaledPoints = quadGui.getScaledQuadPoints(cameraWidth,cameraHeight);
 	for (int i=0; i<4; i++){
 		p_Settings->quadWarpScaled[i] = scaledPoints[i];
+		
 	}
-	
 	//modify custom parameters
 	vector<ofxTSPSGUICustomParam>::iterator it;
 	for(it = params.begin(); it != params.end(); it++){
@@ -502,6 +523,13 @@ void ofxTSPSGuiManager::drawQuadGui( int x, int y, int width, int height ){
 	drawQuadGui();
 };
 
+
+// ZACK BOKA: Added so the quadGui instance can know when image warping is allowed to occur
+//            (i.e., the image can only get warped when in Camera View).
+void ofxTSPSGuiManager::changeGuiCameraView(bool bCameraView) {
+	quadGui.bCameraView = bCameraView;
+};
+
 /***************************************************************
  GET EVENTS FROM GUI BUTTONS
  ***************************************************************/
@@ -540,6 +568,8 @@ void ofxTSPSGuiManager::saveAsEventCatcher( string & buttonName){
 //forward to gui
 void ofxTSPSGuiManager::mousePressed(ofMouseEventArgs &e)
 {
+//	ofxTSPSSettings* p_Settings;
+//	p_Settings = ofxTSPSSettings::getInstance();
 	if(enableGui) panel.mousePressed(e.x, e.y, e.button);
 	if(quadGuiSetup){
 		ofxTSPSSettings *p_Settings;
@@ -549,11 +579,15 @@ void ofxTSPSGuiManager::mousePressed(ofMouseEventArgs &e)
 
 void ofxTSPSGuiManager::mouseDragged(ofMouseEventArgs &e)
 {
+//	ofxTSPSSettings* p_Settings;
+//	p_Settings = ofxTSPSSettings::getInstance();
 	if(enableGui) panel.mouseDragged(e.x, e.y, e.button);
 }
 
 void ofxTSPSGuiManager::mouseReleased(ofMouseEventArgs &e)
 {
+//	ofxTSPSSettings* p_Settings;
+//	p_Settings = ofxTSPSSettings::getInstance();
 	if(enableGui) panel.mouseReleased();
 }
 

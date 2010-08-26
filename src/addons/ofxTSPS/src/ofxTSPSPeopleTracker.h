@@ -187,6 +187,34 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 		void setActiveDimensions ( int actWidth, int actHeight);	
 		void loadFont(string fontName, int fontSize);
 	
+	
+	
+		// ZACK BOKA: for accessing Optical Flow in specific regions
+		//			  and accessing the threshold set in the GUI
+		ofPoint getOpticalFlowInRegion(float x, float y, float w, float h);
+		// NOTE: setting this threshold in the GUI does not change any functionality of TSPS.
+		//       The threshold is a convenience for the user to use in her code (via setting 
+		//       the threshold in the GUI) should she want to detect when a certain amount
+		//       of optical flow within a region has been reached.
+		float* getOpticalFlowThreshold();
+	
+		// ZACK BOKA: for accessing the OSC sender whose parameters are adjusted in the GUI
+		ofxTSPSOscSender* getOSCsender(); 
+	
+		// ZACK BOKA: for getting a color version of the adjusted view image
+		// NOTE:  only works if the adjusted view is currently in color	and not grayscale
+		//        (this parameter can be set in the GUI under the 'views' tab)
+		ofxCvColorImage getAdjustedImageInColor();	
+	
+		// ZACK BOKA: for accessing which view is the current view
+		bool inCameraView();
+		bool inAdjustedView();
+		bool inBackgroundView();
+		bool inDifferencingView();
+		bool inDataView();
+
+	
+	
 	protected:
 	
 		void trackPeople();
@@ -195,7 +223,7 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 			
 		vector<ofxTSPSPerson*> trackedPeople;
 		ofxTSPSScene scene;
-	
+
 		ofxCvGrayscaleImage	grayImage;
 		ofxCvGrayscaleImage	grayImageWarped;
 		ofxCvGrayscaleImage	grayLastImage;
@@ -205,7 +233,18 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 	
 		ofxCvGrayscaleImage graySmallImage;
 		ofxCvGrayscaleImage grayBabyImage;
-		
+	
+		// ZACK BOKA: Adding color to TSPS.
+		//			  Color will only appear in the images as they appear in the gui,
+		//            but the background work will all be done on grayscale versions
+		//            of those color images.  In other words, the color images are just
+		//            a color version of the actual grayscale images that are being processed
+		//            behind the scenes for blob tracking.  Further, color will only be displayed
+		//            if the supplied images (see the update(...) function) are in color to begin with.
+		ofxCvColorImage colorImage;
+		ofxCvColorImage colorImageWarped;
+
+	
 		//more specific CV images for processing
 		
 		CPUImageFilter		grayDiff;
@@ -233,8 +272,8 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 		ofxCvHaarTracker haarTracker;
 		
 		// optical flow
-		
 		ofxCvOpticalFlowLK	opticalFlow;
+		float opticalFlowDetectionThreshold; // ZACK BOKA
 		
 		// switches for filters
 		ofxTSPSSettings *p_Settings;
@@ -273,5 +312,6 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 		ofxTSPSView bgView;
 		ofxTSPSView processedView;
 		ofxTSPSView dataView;
+	
 };
 #endif
