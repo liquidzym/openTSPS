@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\testApp.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
       <Filter>addons\ofxXmlSettings\src</Filter>
@@ -81,9 +80,105 @@
     <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp">
       <Filter>addons\ofxOpenCv\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxLABCvHaarFinder.cpp">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxCvHaarTracker.cpp">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxCvHaarTrackerItem.cpp">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxFileDialog\src\ofxFileDialog.cpp">
+      <Filter>ofxFileDialog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\src\ofxKinect.cpp">
+      <Filter>ofxKinect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\registration.c">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\tilt.c">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\usb_libusb10.c">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\cameras.c">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\core.c">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxLabGui\src\ofxLabGui.cpp">
+      <Filter>ofxLabGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp">
+      <Filter>ofxMSAInteractiveObject\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvOpticalFlowLK.cpp">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVExtensions\src\CPUImageFilter.cpp">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvBlobTracker.cpp">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarping.cpp">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarpingGui.cpp">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSScene.cpp">
+      <Filter>ofxTSPS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSPeopleTracker.cpp">
+      <Filter>ofxTSPS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSPerson.cpp">
+      <Filter>ofxTSPS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSTUIOSender.cpp">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSOscSender.cpp">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSTCPSender.cpp">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\gui\ofxTSPSSettings.cpp">
+      <Filter>ofxTSPS\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\gui\ofxTSPSGuiManager.cpp">
+      <Filter>ofxTSPS\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTSPS\src\utils\ofxTSPSUtils.cpp">
+      <Filter>ofxTSPS\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\TuioTcpXmlServer.cpp">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\ofxTuioClient.cpp">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\ofxTuioServer.cpp">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioServer.cpp">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioTime.cpp">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioClient.cpp">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tspsApp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\testApp.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
       <Filter>addons\ofxXmlSettings\src</Filter>
     </ClInclude>
@@ -189,6 +284,241 @@
     <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.h">
       <Filter>addons\ofxOpenCv\src</Filter>
     </ClInclude>
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxLABCvHaarFinder.h">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxCvHaarTracker.h">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxCvHaarTrackerItem.h">
+      <Filter>ofxCvHaarTracker\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxFileDialog\src\ofxFileDialog.h">
+      <Filter>ofxFileDialog\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\src\ofxKinect.h">
+      <Filter>ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\src\ofxBase3DVideo.h">
+      <Filter>ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\libfreenect-registration.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\registration.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\usb_libusb10.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\cameras.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\freenect_internal.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\libfreenect.h">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\simpleFileLister.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\simpleLogger.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\guiIncludes.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\guiValue.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\guiXmlValue.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\ofxLabGui.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\simpleColor.h">
+      <Filter>ofxLabGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeLogger.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeMultiToggle.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypePanel.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeSlider.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeText.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeToggle.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiBaseObject.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiColor.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiCustomImpl.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTextBase.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiType2DSlider.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeButton.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeCustom.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeDrawable.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeFileLister.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeGroup.h">
+      <Filter>ofxLabGui\src\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h">
+      <Filter>ofxMSAInteractiveObject\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvOpticalFlowLK.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvTrackedBlob.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\CPUImageFilter.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvBlobTracker.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvConstants_Track.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarping.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarpingGui.h">
+      <Filter>ofxOpenCVExtensions\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSScene.h">
+      <Filter>ofxTSPS\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPS.h">
+      <Filter>ofxTSPS\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSPeopleTracker.h">
+      <Filter>ofxTSPS\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSPerson.h">
+      <Filter>ofxTSPS\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSTUIOSender.h">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSOscSender.h">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSTCPSender.h">
+      <Filter>ofxTSPS\src\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\gui\ofxTSPSSettings.h">
+      <Filter>ofxTSPS\src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\gui\ofxTSPSGuiManager.h">
+      <Filter>ofxTSPS\src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\utils\ofxTSPSUtils.h">
+      <Filter>ofxTSPS\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTSPS\src\utils\ofxTSPSView.h">
+      <Filter>ofxTSPS\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\TuioTcpXmlServer.h">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\ofxTuioClient.h">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\ofxTuioServer.h">
+      <Filter>ofxTuioWrapper\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioObject.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioPoint.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioServer.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioTime.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioClient.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioContainer.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioCursor.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioListener.h">
+      <Filter>ofxTuioWrapper\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tspsApp.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\TimerListener.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\UdpSocket.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\IpEndpointName.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\NetworkingUtils.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\PacketListener.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscPrintReceivedElements.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscReceivedElements.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscTypes.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\MessageMappingOscPacketListener.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscException.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscHostEndianness.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscOutboundPacketStream.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscPacketListener.h">
+      <Filter>ofxTuioWrapper\src\oscpack\include\osc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="addons">
@@ -248,5 +578,91 @@
     <Filter Include="addons\ofxThreadedImageLoader\src">
       <UniqueIdentifier>{c07b8ca9-988e-4ae0-80c6-77d9dc8767c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ofxCvHaarTracker">
+      <UniqueIdentifier>{128f82e1-c6ab-4fa0-b8b4-737a178b0d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxFileDialog">
+      <UniqueIdentifier>{5eedd530-6bf7-40f8-840e-a5d101ac544b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxKinect">
+      <UniqueIdentifier>{9a6e139c-b2a6-42c9-ae73-91882a3e4edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxLabGui">
+      <UniqueIdentifier>{43f68e93-d7dd-4519-b36d-50cf5c253f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxMSAInteractiveObject">
+      <UniqueIdentifier>{0c8e01b2-a90a-4062-a935-d493f7bcaa86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxOpenCVExtensions">
+      <UniqueIdentifier>{ba5ed532-9f77-41b6-a5ed-f3348b75c9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTSPS">
+      <UniqueIdentifier>{cb64580b-877c-4ff2-89fe-239301403949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper">
+      <UniqueIdentifier>{d38d2188-8222-4f0c-b105-471ca6eef88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxCvHaarTracker\src">
+      <UniqueIdentifier>{eb4bbd81-bc22-4c85-b5ec-8bcf20d79e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxFileDialog\src">
+      <UniqueIdentifier>{768ce8bc-3195-442c-ae3b-b8f2e7a47d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxKinect\src">
+      <UniqueIdentifier>{36ef4d24-4f38-4cf5-b820-43b5f263ad75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxKinect\libs">
+      <UniqueIdentifier>{5a8e7186-320e-41b2-a08e-7582a667ed8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxKinect\libs\libfreenect">
+      <UniqueIdentifier>{16649a93-73d1-4ba4-a24c-9e4e308095cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxLabGui\src">
+      <UniqueIdentifier>{0dfe05af-5164-4e32-a768-fa2ceb44da6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxLabGui\src\elements">
+      <UniqueIdentifier>{bb7ba7e6-4430-4f2c-a2be-9aedb28f6378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxMSAInteractiveObject\src">
+      <UniqueIdentifier>{df78fb70-f0ff-4d6f-b46f-441e44c839c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxOpenCVExtensions\src">
+      <UniqueIdentifier>{496996e7-5927-4847-a050-ac6f0c915664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTSPS\src">
+      <UniqueIdentifier>{70c75b77-3831-4554-948f-db5f8b84a328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTSPS\src\communication">
+      <UniqueIdentifier>{7416fa07-cb68-40dc-b0e4-a6e130d12862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTSPS\src\gui">
+      <UniqueIdentifier>{9e0bb2be-0abd-4637-a742-e78dba57e6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTSPS\src\utils">
+      <UniqueIdentifier>{2d4fa813-0104-4a0f-872d-59fa23269451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src">
+      <UniqueIdentifier>{3520abd3-31a4-4472-8f69-88acfad28167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src\core">
+      <UniqueIdentifier>{d5046855-f973-4708-9f20-238e721baa6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src\oscpack">
+      <UniqueIdentifier>{39029923-00dc-42c0-abf7-fca98f93341c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src\oscpack\include">
+      <UniqueIdentifier>{1d22d461-2297-496e-9983-6956d7b38e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src\oscpack\include\ip">
+      <UniqueIdentifier>{667fd2b9-a017-4554-8a6a-d4bc8df66a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper\src\oscpack\include\osc">
+      <UniqueIdentifier>{13f0ca25-b89c-430e-bb99-545a1883850c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\ofxKinect\libs\libfreenect\libfreenect.pc.in">
+      <Filter>ofxKinect\libs\libfreenect</Filter>
+    </None>
   </ItemGroup>
 </Project>

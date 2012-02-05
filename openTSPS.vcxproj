@@ -50,7 +50,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxCvHaarTracker\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxFileDialog\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\libs\libfreenect;..\..\..\apps\myApp\openTSPS_Win\src\ofxLabGui\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxLabGui\src\elements;..\..\..\apps\myApp\openTSPS_Win\src\ofxMSAInteractiveObject\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxOpenCVExtensions\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src\core;F:\Dev\of_v007_rexgo\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src\oscpack\include\osc;F:\Dev\of_v007_rexgo\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src\oscpack\include\ip;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\communication;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\gui;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\utils</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -61,9 +61,9 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>openframeworksLibDebug.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpackd.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapackd.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>openframeworksLibDebug.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpackd.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapackd.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlibd.lib;freenect.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\libs\libfreenect\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>atlthunk.lib;LIBC.lib;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName)_debugInfo.pdb</ProgramDatabaseFile>
@@ -83,7 +83,7 @@ if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxCvHaarTracker\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxFileDialog\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\libs\libfreenect;..\..\..\apps\myApp\openTSPS_Win\src\ofxLabGui\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxLabGui\src\elements;..\..\..\apps\myApp\openTSPS_Win\src\ofxMSAInteractiveObject\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxOpenCVExtensions\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\communication;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\gui;..\..\..\apps\myApp\openTSPS_Win\src\ofxTSPS\src\utils;..\..\..\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src;..\..\..\apps\myApp\openTSPS_Win\src\ofxTuioWrapper\src\core</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -93,8 +93,8 @@ if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"
       </DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>openframeworksLib.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;Vfw32.lib;comctl32.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpack.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapack.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openframeworksLib.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;Vfw32.lib;comctl32.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpack.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapack.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlib.lib;freenect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\apps\myApp\openTSPS_Win\src\ofxKinect\libs\libfreenect\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -119,7 +119,38 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
     <ClCompile Include="..\..\..\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxCvHaarTracker.cpp" />
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxCvHaarTrackerItem.cpp" />
+    <ClCompile Include="src\ofxCvHaarTracker\src\ofxLABCvHaarFinder.cpp" />
+    <ClCompile Include="src\ofxFileDialog\src\ofxFileDialog.cpp" />
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\cameras.c" />
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\core.c" />
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\registration.c" />
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\tilt.c" />
+    <ClCompile Include="src\ofxKinect\libs\libfreenect\usb_libusb10.c" />
+    <ClCompile Include="src\ofxKinect\src\ofxKinect.cpp" />
+    <ClCompile Include="src\ofxLabGui\src\ofxLabGui.cpp" />
+    <ClCompile Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp" />
+    <ClCompile Include="src\ofxOpenCVExtensions\src\CPUImageFilter.cpp" />
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvBlobTracker.cpp" />
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarping.cpp" />
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarpingGui.cpp" />
+    <ClCompile Include="src\ofxOpenCVExtensions\src\ofxCvOpticalFlowLK.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSOscSender.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSTCPSender.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\communication\ofxTSPSTUIOSender.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\gui\ofxTSPSGuiManager.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\gui\ofxTSPSSettings.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSPeopleTracker.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSPerson.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\ofxTSPSScene.cpp" />
+    <ClCompile Include="src\ofxTSPS\src\utils\ofxTSPSUtils.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioClient.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioServer.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\core\TuioTime.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\ofxTuioClient.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\ofxTuioServer.cpp" />
+    <ClCompile Include="src\ofxTuioWrapper\src\TuioTcpXmlServer.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
@@ -143,6 +174,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofx3DModelLoader\src\ofx3dModelLoader.cpp" />
     <ClCompile Include="..\..\..\addons\ofx3DModelLoader\src\3DS\model3DS.cpp" />
     <ClCompile Include="..\..\..\addons\ofx3DModelLoader\src\3DS\texture3DS.cpp" />
+    <ClCompile Include="src\tspsApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofx3DBaseLoader.h" />
@@ -150,7 +182,84 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
     <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.h" />
     <ClInclude Include="..\..\..\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.h" />
-    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxCvHaarTracker.h" />
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxCvHaarTrackerItem.h" />
+    <ClInclude Include="src\ofxCvHaarTracker\src\ofxLABCvHaarFinder.h" />
+    <ClInclude Include="src\ofxFileDialog\src\ofxFileDialog.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\cameras.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\freenect_internal.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\libfreenect-registration.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\libfreenect.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\registration.h" />
+    <ClInclude Include="src\ofxKinect\libs\libfreenect\usb_libusb10.h" />
+    <ClInclude Include="src\ofxKinect\src\ofxBase3DVideo.h" />
+    <ClInclude Include="src\ofxKinect\src\ofxKinect.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiBaseObject.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiColor.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiCustomImpl.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTextBase.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiType2DSlider.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeButton.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeCustom.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeDrawable.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeFileLister.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeGroup.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeLogger.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeMultiToggle.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypePanel.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeSlider.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeText.h" />
+    <ClInclude Include="src\ofxLabGui\src\elements\guiTypeToggle.h" />
+    <ClInclude Include="src\ofxLabGui\src\guiIncludes.h" />
+    <ClInclude Include="src\ofxLabGui\src\guiValue.h" />
+    <ClInclude Include="src\ofxLabGui\src\guiXmlValue.h" />
+    <ClInclude Include="src\ofxLabGui\src\ofxLabGui.h" />
+    <ClInclude Include="src\ofxLabGui\src\simpleColor.h" />
+    <ClInclude Include="src\ofxLabGui\src\simpleFileLister.h" />
+    <ClInclude Include="src\ofxLabGui\src\simpleLogger.h" />
+    <ClInclude Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\CPUImageFilter.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvBlobTracker.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvConstants_Track.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarping.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvCoordWarpingGui.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvOpticalFlowLK.h" />
+    <ClInclude Include="src\ofxOpenCVExtensions\src\ofxCvTrackedBlob.h" />
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSOscSender.h" />
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSTCPSender.h" />
+    <ClInclude Include="src\ofxTSPS\src\communication\ofxTSPSTUIOSender.h" />
+    <ClInclude Include="src\ofxTSPS\src\gui\ofxTSPSGuiManager.h" />
+    <ClInclude Include="src\ofxTSPS\src\gui\ofxTSPSSettings.h" />
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPS.h" />
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSPeopleTracker.h" />
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSPerson.h" />
+    <ClInclude Include="src\ofxTSPS\src\ofxTSPSScene.h" />
+    <ClInclude Include="src\ofxTSPS\src\utils\ofxTSPSUtils.h" />
+    <ClInclude Include="src\ofxTSPS\src\utils\ofxTSPSView.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioClient.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioContainer.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioCursor.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioListener.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioObject.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioPoint.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioServer.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\core\TuioTime.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\ofxTuioClient.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\ofxTuioServer.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\IpEndpointName.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\NetworkingUtils.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\PacketListener.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\TimerListener.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\ip\UdpSocket.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscException.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscHostEndianness.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscPacketListener.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscReceivedElements.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\oscpack\include\osc\OscTypes.h" />
+    <ClInclude Include="src\ofxTuioWrapper\src\TuioTcpXmlServer.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
     <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxNetwork.h" />
@@ -181,12 +290,16 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofx3DModelLoader\src\3DS\model3DS.h" />
     <ClInclude Include="..\..\..\addons\ofx3DModelLoader\src\3DS\texture3DS.h" />
     <ClInclude Include="..\..\..\addons\ofx3DModelLoader\src\3DS\Vector3DS.h" />
+    <ClInclude Include="src\tspsApp.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
       <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\ofxKinect\libs\libfreenect\libfreenect.pc.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
