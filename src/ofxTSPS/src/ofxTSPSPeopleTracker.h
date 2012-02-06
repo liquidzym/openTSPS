@@ -67,7 +67,7 @@
 #include "ofxTSPSTUIOSender.h"
 #include "ofxTSPSOscSender.h"
 #include "ofxTSPSTCPSender.h"
-//#include "ofxTSPSWebSocketSender.h"
+#include "ofxTSPSWebSocketSender.h"
 #include "ofxCvBlobTracker.h"
 #include "ofxTSPSScene.h"
 #include "ofxTSPSUtils.h"
@@ -201,7 +201,7 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 		ofxTSPSOscSender* getOSCsender(); 
     
         // Websockets 
-        //ofxTSPSWebSocketSender * getWebSocketServer();
+        ofxTSPSWebSocketSender * getWebSocketServer();
 		
 		// for getting a color version of the adjusted view image
 		// NOTE:  only works if the adjusted view is currently in color	and not grayscale
@@ -281,7 +281,7 @@ class ofxTSPSPeopleTracker : public ofxCvBlobListener {
 		bool bOscEnabled;
 		ofxTSPSTCPSender tcpClient;
 		bool bTcpEnabled;
-        //ofxTSPSWebSocketSender webSocketServer;
+        ofxTSPSWebSocketSender webSocketServer;
         bool bWebSocketsEnabled;
     
 		//gui

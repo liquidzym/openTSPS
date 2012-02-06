@@ -141,13 +141,13 @@ void ofxTSPSPeopleTracker::setupTcp(int port)
 }
 
 //---------------------------------------------------------------------------
-//void ofxTSPSPeopleTracker::setupWebSocket( int port)
-//{
-//	ofLog(OF_LOG_VERBOSE, "SEND VIA WEBSOCKETS AT PORT "+port);
-//    bWebSocketsEnabled = false;
-//	//p_Settings->webSocketPort = port;
-//    //webSocketServer.setup(port);
-//}
+void ofxTSPSPeopleTracker::setupWebSocket( int port)
+{
+	ofLog(OF_LOG_VERBOSE, "SEND VIA WEBSOCKETS AT PORT "+port);
+    bWebSocketsEnabled = true;
+	p_Settings->webSocketPort = port;
+    webSocketServer.setup(port);
+}
 
 //---------------------------------------------------------------------------
 void ofxTSPSPeopleTracker::setListener(ofxPersonListener* listener)
@@ -195,12 +195,12 @@ void ofxTSPSPeopleTracker::updateSettings()
 	else if (!p_Settings->bSendTcp) bTcpEnabled = false;
         
     //check to enable websockets
-	/*if (p_Settings->bSendWebSockets && !bWebSocketsEnabled){
-	setupWebSocket(p_Settings->webSocketPort);
-	} else if (!p_Settings->bSendWebSockets){
-	bWebSocketsEnabled = false;
-	webSocketServer.close();
-	}*/
+    if (p_Settings->bSendWebSockets && !bWebSocketsEnabled){
+        setupWebSocket(p_Settings->webSocketPort);
+    } else if (!p_Settings->bSendWebSockets){
+        bWebSocketsEnabled = false;
+        webSocketServer.close();
+    }
 	//switch camera view if new panel is selected
 	if (p_Settings->currentPanel != p_Settings->lastCurrentPanel) setActiveView(p_Settings->currentPanel + 1);
 
@@ -463,18 +463,19 @@ void ofxTSPSPeopleTracker::trackPeople()
         
         if (bOscEnabled){
             if( p->velocity.x != 0 || p->velocity.y != 0){
+				//DEPRECATED:
                 oscClient.personMoved(p, centroid, width, height, p_Settings->bSendOscContours);
             }
-            oscClient.personMoved(p, centroid, width, height, p_Settings->bSendOscContours);
+            oscClient.personUpdated(p, centroid, width, height, p_Settings->bSendOscContours);
         }
         
         if (bTcpEnabled){
             tcpClient.personMoved(p, centroid, width, height, p_Settings->bSendOscContours);
         }
         
-      /*  if (bWebSocketsEnabled){
+        if (bWebSocketsEnabled){
             webSocketServer.personMoved(p, centroid, width, height, p_Settings->bSendOscContours);
-        }*/
+        }
     }
     
 	if(bTuioEnabled){
@@ -494,14 +495,14 @@ void ofxTSPSPeopleTracker::trackPeople()
 		tcpClient.send();
 	}
     
-    //if (bWebSocketsEnabled){
-    //    if (p_Settings->webSocketPort != webSocketServer.getPort()){
-    //        webSocketServer.close();
-    //        webSocketServer.setup( p_Settings->webSocketPort );
-    //    }
-    //    //sent automagically
-    //    webSocketServer.send();
-    //}
+    if (bWebSocketsEnabled){
+        if (p_Settings->webSocketPort != webSocketServer.getPort()){
+            webSocketServer.close();
+            webSocketServer.setup( p_Settings->webSocketPort );
+        }
+        //sent automagically
+        webSocketServer.send();
+    }
 }
 
 //---------------------------------------------------------------------------
@@ -528,9 +529,9 @@ void ofxTSPSPeopleTracker::blobOn( int x, int y, int id, int order )
 	if(bTcpEnabled){
 		tcpClient.personEntered(newPerson, centroid, width, height, p_Settings->bSendOscContours);
 	}
-	//if(bWebSocketsEnabled){
-	//	webSocketServer.personEntered(newPerson, centroid, width, height, p_Settings->bSendOscContours);
-	//}
+	if(bWebSocketsEnabled){
+		webSocketServer.personEntered(newPerson, centroid, width, height, p_Settings->bSendOscContours);
+	}
 	
 }
 
@@ -566,9 +567,9 @@ void ofxTSPSPeopleTracker::blobOff( int x, int y, int id, int order )
 		tcpClient.personWillLeave(p, centroid, width, height, p_Settings->bSendOscContours);
 	}
     
-	/*if(bWebSocketsEnabled){
+	if(bWebSocketsEnabled){
 		webSocketServer.personWillLeave(p, centroid, width, height, p_Settings->bSendOscContours);
-	}*/
+	}
 	
 	//delete the object and remove it from the vector
 	std::vector<ofxTSPSPerson*>::iterator it;
@@ -883,9 +884,9 @@ ofxTSPSOscSender* ofxTSPSPeopleTracker::getOSCsender() {
 }
 
 //---------------------------------------------------------------------------
-//ofxTSPSWebSocketSender * ofxTSPSPeopleTracker::getWebSocketServer(){
-//    return &webSocketServer;
-//};
+ofxTSPSWebSocketSender * ofxTSPSPeopleTracker::getWebSocketServer(){
+    return &webSocketServer;
+};
 
 
 //---------------------------------------------------------------------------
