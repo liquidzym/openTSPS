@@ -1,3 +1,11 @@
+windows version download------https://github.com/downloads/liquidzym/openTSPS/OpenTSPS_WIN.rar
+
+complied with latest OpenTSPS&openframeworks 0071&VS2010 but i think better to working with CodeBlock
+
+note:don't be suprised if not working as expected,it just did compling and without much testing.
+
+more info:https://github.com/labatrockwell/openTSPS
+
 Release Notes
 ------------
 
